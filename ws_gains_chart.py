@@ -33,9 +33,13 @@ CURRENCY = "CAD"
 CSV_OUT = "gains_by_stock.csv"
 CHART_OUT = "gains_by_stock.png"
 
-# Wealthsimple's internal unified_account_type for a non-registered
-# (cash/taxable) investing account.
-NON_REGISTERED_ACCOUNT_TYPE = "cash"
+# get_accounts() doesn't populate unified_account_type in this ws-api
+# version (always None), so match on the account id/description instead.
+# Wealthsimple can have multiple non-registered accounts (e.g. self-directed
+# margin, crypto, a managed custom portfolio) — this targets the
+# self-directed trading one specifically.
+NON_REGISTERED_ID_PREFIX = "non-registered-"
+NON_REGISTERED_DESCRIPTION_HINT = "self-directed"
 
 
 def in_ci() -> bool:
@@ -69,16 +73,24 @@ def persist_session(session_json: str, _username: str) -> None:
 def find_non_registered_account(accounts: list[dict]) -> dict:
     print("Accounts on this identity:")
     for acct in accounts:
-        print(f"  id={acct['id']}  type={acct.get('unified_account_type')}  "
-              f"description={acct.get('description')!r}")
+        print(f"  id={acct['id']}  description={acct.get('description')!r}")
 
-    for acct in accounts:
-        if acct.get("unified_account_type") == NON_REGISTERED_ACCOUNT_TYPE:
-            return acct
+    candidates = [
+        acct
+        for acct in accounts
+        if acct["id"].startswith(NON_REGISTERED_ID_PREFIX)
+        and NON_REGISTERED_DESCRIPTION_HINT in (acct.get("description") or "").lower()
+    ]
+
+    if len(candidates) == 1:
+        return candidates[0]
 
     raise SystemExit(
-        f"No account with unified_account_type={NON_REGISTERED_ACCOUNT_TYPE!r} found. "
-        "Check the list above and hardcode the account id if the label differs."
+        f"Expected exactly one non-registered account with "
+        f"{NON_REGISTERED_DESCRIPTION_HINT!r} in its description, found "
+        f"{len(candidates)}. Check the list above and adjust "
+        "NON_REGISTERED_ID_PREFIX / NON_REGISTERED_DESCRIPTION_HINT, or "
+        "hardcode the account id, if your account labels differ."
     )
 
 
