@@ -1,32 +1,37 @@
 #!/usr/bin/env python3
-"""Run this once, locally, to log in to Wealthsimple and save a session file.
+"""Run this once, locally, to log in to Wealthsimple and save a session.
 
 Wealthsimple's login flow requires a 2FA/TOTP code, which can't be answered
-from an unattended job, so this step is interactive and run by hand. It
-writes ws_session.json, which ws_gains_chart.py then reads on every later
-run (locally or in CI) without prompting again.
+from an unattended job, so this step is interactive and run by hand. The
+session is stored in your OS keyring (macOS Keychain / GNOME Keyring /
+Windows Credential Manager) rather than a plaintext file, and
+ws_gains_chart.py reads it from there on every later local run without
+prompting again.
 
 The saved session refreshes itself until it eventually expires, at which
 point re-run this script.
 
-Treat ws_session.json like a password: it grants read access to your
-Wealthsimple account data. Never commit it to git.
+The session grants read access to your Wealthsimple account data — treat it
+like a password. It never touches disk as plaintext locally; it's only
+printed once at the end of this script, for you to paste into a GitHub
+Actions secret if you want CI automation (see README).
 """
 
 import getpass
 import sys
 
+import keyring
 from ws_api import OTPRequiredException, WealthsimpleAPI
 
-SESSION_FILE = "ws_session.json"
+KEYRING_SERVICE = "wealthsimple-dashboard"
+KEYRING_KEY = "ws_session"
 
 # Read-only scope: cannot place trades or move money.
 SCOPE = "invest.read trade.read tax.read"
 
 
 def persist_session(session_json: str, _username: str) -> None:
-    with open(SESSION_FILE, "w") as f:
-        f.write(session_json)
+    keyring.set_password(KEYRING_SERVICE, KEYRING_KEY, session_json)
 
 
 def main() -> int:
@@ -50,7 +55,12 @@ def main() -> int:
             scope=SCOPE,
         )
 
-    print(f"Session saved to {SESSION_FILE}. Keep this file secret.")
+    print(f"Session saved to your OS keyring (service={KEYRING_SERVICE!r}).")
+    print()
+    print("Only needed for GitHub Actions automation: paste the line below")
+    print("into the WS_SESSION repo secret. Treat it like a password.")
+    print()
+    print(keyring.get_password(KEYRING_SERVICE, KEYRING_KEY))
     return 0
 
 

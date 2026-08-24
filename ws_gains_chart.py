@@ -6,8 +6,10 @@ this does not reconstruct cost basis (no FIFO / average-cost math) — it just
 reads get_identity_realized_returns, sorts descending, and plots it.
 
 Session loading:
-  - Locally: reads ws_session.json (written by bootstrap_ws_session.py).
-  - In CI: set the WS_SESSION env var to the same JSON instead.
+  - Locally: reads the session from the OS keyring (written there by
+    bootstrap_ws_session.py).
+  - In CI: set the WS_SESSION env var to the same session JSON instead —
+    there's no OS keyring on a GitHub Actions runner.
 
 Outputs:
   - gains_by_stock.csv  (symbol, name, gain)
@@ -18,9 +20,14 @@ import csv
 import os
 import sys
 
+import keyring
 import matplotlib.pyplot as plt
 from ws_api import WealthsimpleAPI, WSAPISession
 
+KEYRING_SERVICE = "wealthsimple-dashboard"
+KEYRING_KEY = "ws_session"
+
+# Ephemeral hand-off file, used only in CI (see persist_session below).
 SESSION_FILE = "ws_session.json"
 CURRENCY = "CAD"
 CSV_OUT = "gains_by_stock.csv"
@@ -31,21 +38,32 @@ CHART_OUT = "gains_by_stock.png"
 NON_REGISTERED_ACCOUNT_TYPE = "cash"
 
 
+def in_ci() -> bool:
+    return bool(os.environ.get("WS_SESSION"))
+
+
 def load_session_json() -> str:
-    env_session = os.environ.get("WS_SESSION")
-    if env_session:
-        return env_session
-    with open(SESSION_FILE) as f:
-        return f.read()
+    if in_ci():
+        return os.environ["WS_SESSION"]
+
+    session = keyring.get_password(KEYRING_SERVICE, KEYRING_KEY)
+    if not session:
+        raise SystemExit(
+            "No session found in the OS keyring. Run bootstrap_ws_session.py first."
+        )
+    return session
 
 
 def persist_session(session_json: str, _username: str) -> None:
-    # Always write the (possibly refreshed) session locally. Locally this
-    # updates ws_session.json in place; in CI it produces a fresh
-    # ws_session.json in the ephemeral runner workspace that the workflow
-    # can compare against the WS_SESSION secret and re-upload if it changed.
-    with open(SESSION_FILE, "w") as f:
-        f.write(session_json)
+    # The session can rotate its tokens on refresh, so always persist the
+    # latest copy. Locally that means the OS keyring; in CI there's no
+    # keyring, so write it to a local file the workflow can pick up and
+    # push back to the WS_SESSION secret.
+    if in_ci():
+        with open(SESSION_FILE, "w") as f:
+            f.write(session_json)
+    else:
+        keyring.set_password(KEYRING_SERVICE, KEYRING_KEY, session_json)
 
 
 def find_non_registered_account(accounts: list[dict]) -> dict:

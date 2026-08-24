@@ -14,9 +14,13 @@ python bootstrap_ws_session.py   # run once, interactively, handles 2FA
 python ws_gains_chart.py         # writes gains_by_stock.csv / .png
 ```
 
-`ws_session.json` (created by `bootstrap_ws_session.py`) grants read access
-to your Wealthsimple account data — never commit it. It's already in
-`.gitignore`.
+The session (created by `bootstrap_ws_session.py`) grants read access to
+your Wealthsimple account data — treat it like a password. Locally it's
+stored in your OS keyring (macOS Keychain / GNOME Keyring / Windows
+Credential Manager), never as a plaintext file. Your Wealthsimple
+email/password themselves are never stored anywhere by these scripts — you
+type them by hand each time you (re-)run `bootstrap_ws_session.py`; keep
+them in your own password manager as usual.
 
 ## GitHub Actions automation (optional)
 
@@ -32,9 +36,10 @@ radius but doesn't eliminate it.
 
 Setup:
 
-1. Run `bootstrap_ws_session.py` locally once.
-2. Add the contents of the resulting `ws_session.json` as a repo secret
-   named `WS_SESSION` (Settings → Secrets and variables → Actions).
+1. Run `bootstrap_ws_session.py` locally once. It prints the session once
+   at the end (only reason it ever touches plaintext) so you can copy it.
+2. Add that printed value as a repo secret named `WS_SESSION`
+   (Settings → Secrets and variables → Actions).
 3. *(Optional, for auto session-refresh)* Wealthsimple's session tokens can
    rotate on use. If they do, the workflow needs to write the new session
    back to the `WS_SESSION` secret itself, or a later run may start failing.
