@@ -6,7 +6,39 @@ Read-and-analyze only — no trade execution, no moving money.
 See `CLAUDE.md` for the full project brief (data source decision, API
 reference, guardrails, next steps).
 
-## Quick start
+**Security tradeoff, per CLAUDE.md:** running this on GitHub puts a token
+that can *read* all your Wealthsimple financial data into GitHub's cloud as
+a repo secret. For a purely personal tool, a local cron job is the safer
+home — only use the GitHub Actions path below if you're consciously OK with
+that tradeoff. Read-only scope limits blast radius but doesn't eliminate it.
+
+## Option A: entirely on GitHub, no local install
+
+Everything runs on GitHub-hosted runners — nothing to clone or install on
+your own machine.
+
+1. Create a fine-grained GitHub PAT scoped to *only this repo*, with
+   **Secrets: write** permission (Settings → Developer settings → Personal
+   access tokens → Fine-grained tokens). Add it as a repo secret named
+   `SECRETS_PAT` (Settings → Secrets and variables → Actions).
+2. Go to **Actions → Bootstrap Wealthsimple session (one-time) → Run
+   workflow**. Enter your email and password (leave the 2FA field blank the
+   first time) and run it.
+3. Wealthsimple almost always requires a 2FA code, so this first run will
+   fail with `OTP_REQUIRED`. Get a fresh code from your authenticator and
+   run the workflow again with the `ws_otp` field filled in — do this
+   promptly, since the code expires in seconds.
+4. Once it succeeds, the `WS_SESSION` secret is populated. From then on,
+   **Actions → Daily Wealthsimple gains pull** runs automatically every day
+   (or trigger it manually with "Run workflow") and commits
+   `gains_by_stock.csv` / `gains_by_stock.png` back to the repo, where they
+   can be viewed directly on github.com.
+
+Workflow inputs (email, password, OTP) are masked in the run logs. They're
+used once to log in and are never written anywhere; only the resulting
+session token is persisted, as the `WS_SESSION` secret.
+
+## Option B: run it locally instead
 
 ```bash
 pip install -r requirements.txt
@@ -22,31 +54,6 @@ email/password themselves are never stored anywhere by these scripts — you
 type them by hand each time you (re-)run `bootstrap_ws_session.py`; keep
 them in your own password manager as usual.
 
-## GitHub Actions automation (optional)
-
-`.github/workflows/daily-gains.yml` runs the pull daily (and on-demand via
-"Run workflow") and commits the refreshed `gains_by_stock.csv` /
-`gains_by_stock.png` back to the repo.
-
-**Security tradeoff, per CLAUDE.md:** this puts a token that can *read* all
-your Wealthsimple financial data into GitHub's cloud as a repo secret. For a
-purely personal tool, a local cron job is the safer home — only enable this
-if you're consciously OK with that tradeoff. Read-only scope limits blast
-radius but doesn't eliminate it.
-
-Setup:
-
-1. Run `bootstrap_ws_session.py` locally once. It prints the session once
-   at the end (only reason it ever touches plaintext) so you can copy it.
-2. Add that printed value as a repo secret named `WS_SESSION`
-   (Settings → Secrets and variables → Actions).
-3. *(Optional, for auto session-refresh)* Wealthsimple's session tokens can
-   rotate on use. If they do, the workflow needs to write the new session
-   back to the `WS_SESSION` secret itself, or a later run may start failing.
-   The default `GITHUB_TOKEN` cannot manage repo secrets, so this step is
-   opt-in: create a token scoped only to manage this repo's Actions secrets
-   (a fine-grained PAT with "Secrets: write" access limited to this one
-   repo is the least-privileged option) and add it as a secret named
-   `SECRETS_PAT`. Without it, if the session ever stops working, just
-   re-run `bootstrap_ws_session.py` locally and update the `WS_SESSION`
-   secret by hand.
+You can also use this local session to seed the `WS_SESSION` secret by hand
+(paste the value it prints) instead of going through Option A's bootstrap
+workflow — see `.github/workflows/daily-gains.yml`'s comments for details.

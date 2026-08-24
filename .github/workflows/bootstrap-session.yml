@@ -1,0 +1,72 @@
+name: Bootstrap Wealthsimple session (one-time)
+
+# Manually triggered from the Actions tab. Logs in from a GitHub-hosted
+# runner (full internet access, unlike a sandboxed dev session) and saves
+# the resulting session straight to the WS_SESSION repo secret, so no
+# local machine or local download is involved.
+#
+# Requires the SECRETS_PAT repo secret to already exist: a fine-grained
+# PAT scoped to only this repo's Actions secrets ("Secrets: write"). See
+# README for how to create one. Without it, this workflow refuses to run
+# rather than printing your session to the logs.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ws_email:
+        description: "Wealthsimple email"
+        required: true
+        type: string
+      ws_password:
+        description: "Wealthsimple password"
+        required: true
+        type: string
+      ws_otp:
+        description: "2FA code — leave blank on the first run. If it fails asking for one, get a fresh code and re-run with this filled in."
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require SECRETS_PAT
+        env:
+          HAS_PAT: ${{ secrets.SECRETS_PAT }}
+        run: |
+          if [ -z "$HAS_PAT" ]; then
+            echo "::error::SECRETS_PAT repo secret is not set. Add a fine-grained PAT scoped to this repo's Actions secrets (Secrets: write) before running this workflow — see README."
+            exit 1
+          fi
+
+      - name: Mask sensitive inputs in logs
+        run: |
+          echo "::add-mask::${{ inputs.ws_password }}"
+          if [ -n "${{ inputs.ws_otp }}" ]; then
+            echo "::add-mask::${{ inputs.ws_otp }}"
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install ws-api
+
+      - name: Log in
+        env:
+          WS_EMAIL: ${{ inputs.ws_email }}
+          WS_PASSWORD: ${{ inputs.ws_password }}
+          WS_OTP: ${{ inputs.ws_otp }}
+        run: python bootstrap_ci_session.py
+
+      - name: Save session to WS_SESSION secret
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          gh secret set WS_SESSION --repo "${{ github.repository }}" < ws_session_out.json
+          echo "WS_SESSION secret saved. You can now run the 'Daily Wealthsimple gains pull' workflow."
