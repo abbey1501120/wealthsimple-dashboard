@@ -1,0 +1,110 @@
+symbol,name,gain
+NVDA,Nvidia CDR (CAD Hedged),28763.16
+MU,Micron Technology Inc.,14008.18
+NVDA,NVIDIA Corp,11800.48
+CLS.TO,Celestica Inc.,10880.21
+AMZN,Amazon.com Inc.,9569.64
+SNOW,Snowflake Inc (Class A),7812.86
+AVGO,Broadcom CDR (CAD Hedged),6410.02
+GOOG,Alphabet Inc.,6241.4
+NNRG,Ninepoint Energy Fund,6142.65
+IREN,IREN Limited,5692.79
+TSM,Taiwan Semiconductor Manufacturing,5233.49
+MSFT,Microsoft Corp.,4948.73
+BEW,BeWhere Holdings Inc,4887.5
+IBM,International Business Machines Corp.,4112.61
+GE,GE Aerospace,3951.75
+JPM,JPMorgan Chase & Co.,3481.47
+AXTI,AXT Inc,2860.31
+INTC,Intel Corporation,2198.44
+INTC,Intel CDR (CAD Hedged),2147.91
+NOW,Servicenow Inc.,1948.55
+AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
+C,Citigroup Inc,1801.38
+LRCX,Lam Research Corp.,1687.89
+SMCI,Supermicro CDR (CAD Hedged),1679.17
+ON,ON Semiconductor Corp.,1606.89
+WFC,Wells Fargo & Company,1597.49
+MU,Micron CDR (CAD Hedged),1530.5
+MRVL,Marvell Technology Inc.,1482.06
+DELL,Dell Technologies Inc (Class C),1463.24
+V,Visa Inc (Class A),1458.36
+WCP,Whitecap Resources Inc,1457.75
+CVS,CVS Health CDR (CAD Hedged),1271.66
+ANET,Arista Networks Inc.,1157.56
+NBIS,Nebius Group NV,1145.18
+AMZN,Amazon.com CDR (CAD Hedged),1119.25
+T,AT&T Inc.,1025.31
+MFC.TO,Manulife Financial Corporation,945.35
+WMT,Walmart Inc,927.94
+HOOD,Robinhood Markets Inc (Class A),834.33
+TSLA,Tesla Inc,744.74
+WMT,Walmart CDR (CAD Hedged),693.42
+AMD,Advanced Micro Devices Inc.,693.1
+CRWV,CoreWeave Inc.,622.98
+BN.TO,Brookfield Corp.,608.75
+GE,General Electric CDR (CAD Hedged),584.17
+XIC,BlackRock iShares Core S&P/TSX Capped Composite Index ETF,574.7
+AVGO,Broadcom Inc.,537.13
+QQQY,Evolve NASDAQ Technology Enhanced Yield Index Fund,515.0
+TXN,Texas Instruments Inc.,502.52
+XEQT,iShares Core Equity ETF Portfolio,496.6
+SNPS,"Synopsys, Inc.",472.3
+UNH,UnitedHealth CDR (CAD Hedged),396.0
+HOOD,Robinhood CDR (CAD Hedged),391.55
+QCOM,Qualcomm CDR (CAD Hedged),350.0
+RCI.A,Rogers Communications Inc. (Class A),290.0
+XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
+GOOG,Alphabet CDR (CAD Hedged) ,268.7
+MSFT,Microsoft CDR (CAD Hedged),237.8
+CEG,Constellation Energy Corp.,222.77
+ABBV,AbbVie CDR (CAD Hedged),210.0
+META,Meta Platforms Inc.,208.08
+VCN,Vanguard Investments Canada Inc. - FTSE Canada All Capital Index ETF,207.3
+VISA,Visa CDR (CAD Hedged),197.0
+COST,Costco CDR (CAD Hedged),193.78
+BTO,B2Gold Corp.,193.75
+ROBO,Exchange Traded Concepts Trust - Robo Global ETF,188.64
+LLY,Eli Lilly CDR (CAD Hedged),184.99
+TGT,Target Corp.,164.7
+UPS,UPS CDR (CAD Hedged),150.0
+AMAT,Applied Materials Inc.,146.4
+QBTS,D-Wave Quantum Inc.,143.98
+RGTI,Rigetti Computing Inc.,143.23
+GOOGL,Alphabet Inc (Class A),130.68
+IONQ,IonQ Inc,125.84
+BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
+PL,Planet Labs PBC (Class A),121.87
+CSCO,Cisco Systems Inc.,111.07
+CBOE,Cboe Global Markets Inc.,99.59
+ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
+POW,Power Corp. Of Canada,78.77
+CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,59.95
+DOL,Dollarama Inc,44.4
+SMR,NuScale Power Corp.,32.31
+PGY,Pagaya Technologies Ltd (Class A),26.12
+ZCN,BMO SP TSX CAPPED COMP IDX ETF,25.0
+INTC,,-2.8
+AC,Air Canada Inc.,-4.17
+INTC,,-64.45
+LLY,Eli Lilly & Company,-92.85
+HOOD,,-97.68
+HHIS,Harvest Diversified High Income Shares ETF - Class A,-108.69
+ALAB,Astera Labs Inc.,-149.32
+BTAI,BioXcel Therapeutics Inc.,-208.44
+SPMO,Invesco Exchange Traded Fund Trust II - S&P 500 Momntm,-236.94
+SMCI,Super Micro Computer Inc,-255.84
+ULTY,Tidal Trust II - Yieldmax Ultra Option Income Strategy ETF,-491.44
+JOBY,Joby Aviation Inc.,-521.2
+OVV.TO,Ovintiv Inc,-545.85
+BRK,Berkshire Hathaway CDR (CAD Hedged),-622.0
+GEN,Gen Digital Inc.,-721.46
+GS,"Goldman Sachs Group, Inc.",-879.17
+TMQ.TO,Trilogy Metals Inc,-882.8
+RY.TO,Royal Bank of Canada,-1277.35
+TD.TO,The Toronto-Dominion Bank,-1480.19
+SERV,Serve Robotics Inc.,-1752.23
+RKLB,Rocket Lab Corp.,-1808.27
+AEC.TO,Anfield Energy Inc.,-2110.51
+RR,Richtech Robotics Inc.,-2319.44
+SOFI,SoFi Technologies Inc.,-4937.29
