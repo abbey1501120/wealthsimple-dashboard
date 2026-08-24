@@ -42,10 +42,13 @@ jobs:
       # locally. Set the SECRETS_PAT repo secret (a token scoped to manage
       # this repo's Actions secrets) to keep WS_SESSION self-updating.
       - name: Refresh WS_SESSION secret if a token is configured
-        if: ${{ secrets.SECRETS_PAT != '' }}
         env:
           GH_TOKEN: ${{ secrets.SECRETS_PAT }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "SECRETS_PAT not set; skipping session refresh."
+            exit 0
+          fi
           if [ -f ws_session.json ]; then
             gh secret set WS_SESSION --repo "${{ github.repository }}" < ws_session.json
             echo "WS_SESSION secret refreshed."
