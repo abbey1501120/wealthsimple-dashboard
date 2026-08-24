@@ -1,0 +1,7 @@
+ws_session.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+gains_by_stock.csv
+gains_by_stock.png
