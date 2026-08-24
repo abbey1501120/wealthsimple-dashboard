@@ -1,0 +1,52 @@
+name: Daily Wealthsimple gains pull
+
+on:
+  schedule:
+    # ~9:15am ET (UTC-4/5 depending on DST) — daily is plenty, per CLAUDE.md guardrails.
+    - cron: "15 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  pull-gains:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run gains pull
+        env:
+          WS_SESSION: ${{ secrets.WS_SESSION }}
+        run: python ws_gains_chart.py
+
+      - name: Commit updated chart/csv
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gains_by_stock.csv gains_by_stock.png
+          git diff --cached --quiet || git commit -m "Update realized gains chart [skip ci]"
+          git push
+
+      # Optional: the WS session can rotate its tokens on refresh. Without
+      # writing the new session back to the WS_SESSION secret, the *next*
+      # run keeps using the secret's original tokens — fine if they still
+      # work, but if Wealthsimple rotates refresh tokens on use, the run
+      # after that could fail and require re-running bootstrap_ws_session.py
+      # locally. Set the SECRETS_PAT repo secret (a token scoped to manage
+      # this repo's Actions secrets) to keep WS_SESSION self-updating.
+      - name: Refresh WS_SESSION secret if a token is configured
+        if: ${{ secrets.SECRETS_PAT != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          if [ -f ws_session.json ]; then
+            gh secret set WS_SESSION --repo "${{ github.repository }}" < ws_session.json
+            echo "WS_SESSION secret refreshed."
+          fi

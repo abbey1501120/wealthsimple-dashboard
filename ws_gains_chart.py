@@ -40,10 +40,12 @@ def load_session_json() -> str:
 
 
 def persist_session(session_json: str, _username: str) -> None:
-    # No-op in CI (WS_SESSION is set manually); update the local file otherwise.
-    if not os.environ.get("WS_SESSION"):
-        with open(SESSION_FILE, "w") as f:
-            f.write(session_json)
+    # Always write the (possibly refreshed) session locally. Locally this
+    # updates ws_session.json in place; in CI it produces a fresh
+    # ws_session.json in the ephemeral runner workspace that the workflow
+    # can compare against the WS_SESSION secret and re-upload if it changed.
+    with open(SESSION_FILE, "w") as f:
+        f.write(session_json)
 
 
 def find_non_registered_account(accounts: list[dict]) -> dict:

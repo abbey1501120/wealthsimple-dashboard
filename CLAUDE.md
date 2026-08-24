@@ -81,11 +81,14 @@ Install: `pip install ws-api matplotlib keyring`
    for the full picture (second series or second chart).
 2. **Full dashboard** — turn the CSV into a multi-widget local HTML page
    (gains chart + positions + dividends + activity feed).
-3. **GitHub Actions automation** — schedule a daily pull.
-   - Store the session as a repo secret (`WS_SESSION`), read via env var.
-   - **Session refresh problem:** the persist callback produces a new session
-     on refresh; on CI you must write it back (e.g. update the secret via the
-     GitHub API) or re-bootstrap when it expires.
+3. **GitHub Actions automation** — DONE, see `.github/workflows/daily-gains.yml`.
+   Runs daily + on-demand, reads the session from the `WS_SESSION` repo
+   secret, commits the refreshed CSV/PNG back to the repo.
+   - **Session refresh problem:** handled opt-in — if a `SECRETS_PAT` repo
+     secret (scoped to manage this repo's Actions secrets) is present, the
+     workflow writes the refreshed session back to `WS_SESSION` after each
+     run. Without it, re-bootstrap locally and update the secret by hand if
+     the session ever stops working. See README for setup.
    - **Security tradeoff (decide consciously):** running on GitHub puts a
      token that can *read* all WS financial data into GitHub's cloud. For a
      purely personal tool, a local cron job is the safer home. Read-only scope
