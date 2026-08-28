@@ -3,7 +3,7 @@ NVDA,Nvidia CDR (CAD Hedged),28763.16
 MU,Micron Technology Inc.,14008.18
 NVDA,NVIDIA Corp,11800.48
 CLS.TO,Celestica Inc.,10880.21
-AMZN,Amazon.com Inc.,9569.64
+AMZN,Amazon.com Inc.,10744.22
 MSFT,Microsoft Corp.,7965.82
 SNOW,Snowflake Inc (Class A),7812.86
 AVGO,Broadcom CDR (CAD Hedged),6410.02
@@ -18,7 +18,7 @@ JPM,JPMorgan Chase & Co.,3481.47
 AXTI,AXT Inc,2860.31
 INTC,Intel Corporation,2198.44
 INTC,Intel CDR (CAD Hedged),2147.91
-NOW,Servicenow Inc.,1948.55
+NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
 C,Citigroup Inc,1801.38
 LRCX,Lam Research Corp.,1687.89
@@ -107,4 +107,4 @@ SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
 AEC.TO,Anfield Energy Inc.,-2110.51
 RR,Richtech Robotics Inc.,-2319.44
-SOFI,SoFi Technologies Inc.,-4937.29
+SOFI,SoFi Technologies Inc.,-4715.6
