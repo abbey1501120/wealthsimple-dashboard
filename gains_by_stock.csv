@@ -1,7 +1,7 @@
 symbol,name,gain
 NVDA,Nvidia CDR (CAD Hedged),29071.81
 MU,Micron Technology Inc.,14008.18
-NVDA,NVIDIA Corp,11800.48
+NVDA,NVIDIA Corp,12695.21
 CLS.TO,Celestica Inc.,10880.21
 AMZN,Amazon.com Inc.,10744.22
 MSFT,Microsoft Corp.,7965.82
@@ -21,6 +21,7 @@ INTC,Intel CDR (CAD Hedged),2147.91
 NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
 C,Citigroup Inc,1801.38
+HOOD,Robinhood Markets Inc (Class A),1776.71
 LRCX,Lam Research Corp.,1687.89
 SMCI,Supermicro CDR (CAD Hedged),1679.17
 ON,ON Semiconductor Corp.,1606.89
@@ -37,7 +38,6 @@ AMZN,Amazon.com CDR (CAD Hedged),1119.25
 T,AT&T Inc.,1025.31
 MFC.TO,Manulife Financial Corporation,945.35
 WMT,Walmart Inc,927.94
-HOOD,Robinhood Markets Inc (Class A),834.33
 TSLA,Tesla Inc,744.74
 WMT,Walmart CDR (CAD Hedged),693.42
 AMD,Advanced Micro Devices Inc.,693.1
