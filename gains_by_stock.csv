@@ -38,6 +38,7 @@ AMZN,Amazon.com CDR (CAD Hedged),1119.25
 T,AT&T Inc.,1025.31
 MFC.TO,Manulife Financial Corporation,945.35
 WMT,Walmart Inc,927.94
+SCR,Strathcona Resources Limited,763.42
 TSLA,Tesla Inc,744.74
 WMT,Walmart CDR (CAD Hedged),693.42
 AMD,Advanced Micro Devices Inc.,693.1
@@ -53,7 +54,6 @@ SNPS,"Synopsys, Inc.",472.3
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
 QCOM,Qualcomm CDR (CAD Hedged),350.0
-SCR,Strathcona Resources Limited,340.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
 GOOG,Alphabet CDR (CAD Hedged) ,268.7
