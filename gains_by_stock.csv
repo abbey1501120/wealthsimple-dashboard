@@ -21,8 +21,8 @@ INTC,Intel CDR (CAD Hedged),2402.41
 LRCX,Lam Research Corp.,2040.87
 NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
+HOOD,Robinhood Markets Inc (Class A),1865.07
 C,Citigroup Inc,1801.38
-HOOD,Robinhood Markets Inc (Class A),1776.71
 SMCI,Supermicro CDR (CAD Hedged),1679.17
 ON,ON Semiconductor Corp.,1606.89
 WFC,Wells Fargo & Company,1597.49
@@ -78,6 +78,7 @@ IONQ,IonQ Inc,125.84
 BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
 PL,Planet Labs PBC (Class A),121.87
 CSCO,Cisco Systems Inc.,111.07
+ATH,Athabasca Oil Corp,105.5
 CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
 POW,Power Corp. Of Canada,78.77
