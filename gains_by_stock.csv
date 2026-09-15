@@ -7,9 +7,9 @@ AMZN,Amazon.com Inc.,10744.22
 MSFT,Microsoft Corp.,7965.82
 SNOW,Snowflake Inc (Class A),7812.86
 IREN,IREN Limited,7336.63
+NNRG,Ninepoint Energy Fund,6732.65
 AVGO,Broadcom CDR (CAD Hedged),6410.02
 GOOG,Alphabet Inc.,6241.4
-NNRG,Ninepoint Energy Fund,6142.65
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 BEW,BeWhere Holdings Inc,4887.5
 IBM,International Business Machines Corp.,4112.61
@@ -17,6 +17,7 @@ GE,GE Aerospace,3951.75
 JPM,JPMorgan Chase & Co.,3481.47
 AXTI,AXT Inc,2860.31
 INTC,Intel Corporation,2784.84
+WCP,Whitecap Resources Inc,2508.75
 INTC,Intel CDR (CAD Hedged),2402.41
 LRCX,Lam Research Corp.,2040.87
 NOW,ServiceNow Inc,1948.55
@@ -30,15 +31,14 @@ MU,Micron CDR (CAD Hedged),1530.5
 MRVL,Marvell Technology Inc.,1482.06
 DELL,Dell Technologies Inc (Class C),1463.24
 V,Visa Inc (Class A),1458.36
-WCP,Whitecap Resources Inc,1457.75
 CVS,CVS Health CDR (CAD Hedged),1271.66
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
 AMZN,Amazon.com CDR (CAD Hedged),1119.25
 T,AT&T Inc.,1025.31
+SCR,Strathcona Resources Limited,1009.99
 WMT,Walmart Inc,972.73
 MFC.TO,Manulife Financial Corporation,945.35
-SCR,Strathcona Resources Limited,763.42
 TSLA,Tesla Inc,744.74
 WMT,Walmart CDR (CAD Hedged),693.42
 AMD,Advanced Micro Devices Inc.,693.1
@@ -53,6 +53,7 @@ XEQT,iShares Core Equity ETF Portfolio,496.6
 SNPS,"Synopsys, Inc.",472.3
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
+OXY,Occidental Petroleum Corporation,387.94
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
@@ -67,6 +68,7 @@ COST,Costco CDR (CAD Hedged),193.78
 BTO,B2Gold Corp.,193.75
 ROBO,Exchange Traded Concepts Trust - Robo Global ETF,188.64
 LLY,Eli Lilly CDR (CAD Hedged),184.99
+ATH,Athabasca Oil Corp,180.5
 TGT,Target Corp.,164.7
 BA,Boeing Co.,157.16
 UPS,UPS CDR (CAD Hedged),150.0
@@ -78,7 +80,6 @@ IONQ,IonQ Inc,125.84
 BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
 PL,Planet Labs PBC (Class A),121.87
 CSCO,Cisco Systems Inc.,111.07
-ATH,Athabasca Oil Corp,105.5
 CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
 POW,Power Corp. Of Canada,78.77
