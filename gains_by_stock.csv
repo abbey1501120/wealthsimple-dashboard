@@ -1,15 +1,15 @@
 symbol,name,gain
 NVDA,Nvidia CDR (CAD Hedged),29071.81
 MU,Micron Technology Inc.,14008.18
-NVDA,NVIDIA Corp,13593.36
+NVDA,NVIDIA Corp,13722.82
 CLS.TO,Celestica Inc.,12464.61
 AMZN,Amazon.com Inc.,10744.22
+IREN,IREN Limited,8029.49
 MSFT,Microsoft Corp.,7965.82
 SNOW,Snowflake Inc (Class A),7812.86
-IREN,IREN Limited,7336.63
 NNRG,Ninepoint Energy Fund,6732.65
 AVGO,Broadcom CDR (CAD Hedged),6410.02
-GOOG,Alphabet Inc.,6241.4
+GOOG,Alphabet Inc.,6375.77
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 INTC,Intel Corporation,5209.14
 BEW,BeWhere Holdings Inc,4887.5
@@ -51,6 +51,7 @@ QQQY,Evolve NASDAQ Technology Enhanced Yield Index Fund,515.0
 TXN,Texas Instruments Inc.,502.52
 XEQT,iShares Core Equity ETF Portfolio,496.6
 SNPS,"Synopsys, Inc.",472.3
+DOL,Dollarama Inc,413.05
 OXY,Occidental Petroleum Corporation,403.59
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
@@ -85,7 +86,6 @@ CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
 POW,Power Corp. Of Canada,78.77
 CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,59.95
-DOL,Dollarama Inc,44.4
 SMR,NuScale Power Corp.,32.31
 PGY,Pagaya Technologies Ltd (Class A),26.12
 ZCN,BMO SP TSX CAPPED COMP IDX ETF,25.0
