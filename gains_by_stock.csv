@@ -55,6 +55,7 @@ DOL,Dollarama Inc,413.05
 OXY,Occidental Petroleum Corporation,403.59
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
+IONQ,IonQ Inc,373.24
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
@@ -77,7 +78,6 @@ AMAT,Applied Materials Inc.,146.4
 QBTS,D-Wave Quantum Inc.,143.98
 RGTI,Rigetti Computing Inc.,143.23
 GOOGL,Alphabet Inc (Class A),130.68
-IONQ,IonQ Inc,125.84
 BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
 PL,Planet Labs PBC (Class A),121.87
 CVE.TO,Cenovus Energy Inc.,119.9
