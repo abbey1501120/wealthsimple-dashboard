@@ -17,7 +17,7 @@ IBM,International Business Machines Corp.,4112.61
 GE,GE Aerospace,3951.75
 JPM,JPMorgan Chase & Co.,3481.47
 LRCX,Lam Research Corp.,3443.61
-AXTI,AXT Inc,2860.31
+AXTI,AXT Inc,3022.25
 WCP,Whitecap Resources Inc,2508.75
 INTC,Intel CDR (CAD Hedged),2402.41
 NOW,ServiceNow Inc,1948.55
@@ -35,6 +35,7 @@ CVS,CVS Health CDR (CAD Hedged),1271.66
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
 AMZN,Amazon.com CDR (CAD Hedged),1119.25
+CDNS,Cadence Design Systems Inc.,1061.01
 T,AT&T Inc.,1025.31
 SCR,Strathcona Resources Limited,1009.99
 WMT,Walmart Inc,972.73
@@ -57,9 +58,9 @@ UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
 IONQ,IonQ Inc,379.0
 QCOM,Qualcomm CDR (CAD Hedged),350.0
+GOOG,Alphabet CDR (CAD Hedged) ,326.14
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
-GOOG,Alphabet CDR (CAD Hedged) ,268.7
 MSFT,Microsoft CDR (CAD Hedged),237.8
 CEG,Constellation Energy Corp.,222.77
 ABBV,AbbVie CDR (CAD Hedged),210.0
