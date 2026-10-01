@@ -12,14 +12,15 @@ AVGO,Broadcom CDR (CAD Hedged),6410.02
 GOOG,Alphabet Inc.,6375.77
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 INTC,Intel Corporation,5209.14
+LRCX,Lam Research Corp.,5140.25
 BEW,BeWhere Holdings Inc,4887.5
 IBM,International Business Machines Corp.,4112.61
 GE,GE Aerospace,3951.75
 JPM,JPMorgan Chase & Co.,3481.47
-LRCX,Lam Research Corp.,3443.61
 AXTI,AXT Inc,3022.25
 WCP,Whitecap Resources Inc,2508.75
 INTC,Intel CDR (CAD Hedged),2402.41
+CDNS,Cadence Design Systems Inc.,2225.03
 NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
 HOOD,Robinhood Markets Inc (Class A),1865.07
@@ -35,7 +36,6 @@ CVS,CVS Health CDR (CAD Hedged),1271.66
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
 AMZN,Amazon.com CDR (CAD Hedged),1119.25
-CDNS,Cadence Design Systems Inc.,1061.01
 T,AT&T Inc.,1025.31
 SCR,Strathcona Resources Limited,1009.99
 WMT,Walmart Inc,972.73
