@@ -60,6 +60,7 @@ DOL,Dollarama Inc,413.05
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
 IONQ,IonQ Inc,379.0
+CRCL,Circle Internet Group Inc.,372.61
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
@@ -86,7 +87,6 @@ CSCO,Cisco Systems Inc.,111.07
 CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
 POW,Power Corp. Of Canada,78.77
-CRCL,Circle Internet Group Inc.,62.75
 CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,59.95
 SMR,NuScale Power Corp.,32.31
 PGY,Pagaya Technologies Ltd (Class A),26.12
@@ -109,6 +109,7 @@ GEN,Gen Digital Inc.,-721.46
 GS,"Goldman Sachs Group, Inc.",-879.17
 TMQ.TO,Trilogy Metals Inc,-882.8
 RY.TO,Royal Bank of Canada,-1277.35
+ORCL,Oracle Corp.,-1292.41
 TD.TO,The Toronto-Dominion Bank,-1480.19
 SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
