@@ -6,7 +6,7 @@ NVDA,NVIDIA Corp,13730.29
 AMZN,Amazon.com Inc.,10744.22
 IREN,IREN Limited,8029.49
 MSFT,Microsoft Corp.,7965.82
-SNOW,Snowflake Inc (Class A),7812.86
+SNOW,Snowflake Inc (Class A),7907.62
 NNRG,Ninepoint Energy Fund,6910.27
 GOOG,Alphabet Inc.,6660.6
 AVGO,Broadcom CDR (CAD Hedged),6410.02
@@ -33,13 +33,13 @@ MRVL,Marvell Technology Inc.,1482.06
 DELL,Dell Technologies Inc (Class C),1463.24
 V,Visa Inc (Class A),1458.36
 CVS,CVS Health CDR (CAD Hedged),1271.66
+SCR,Strathcona Resources Limited,1264.62
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
 AMZN,Amazon.com CDR (CAD Hedged),1119.25
 T,AT&T Inc.,1025.31
 WMT,Walmart Inc,972.73
 MFC.TO,Manulife Financial Corporation,945.35
-SCR,Strathcona Resources Limited,934.72
 ATH,Athabasca Oil Corp,923.6
 GOOG,Alphabet CDR (CAD Hedged) ,759.86
 OXY,Occidental Petroleum Corporation,755.09
@@ -59,8 +59,8 @@ CEG,Constellation Energy Corp.,468.64
 DOL,Dollarama Inc,413.05
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
+CRCL,Circle Internet Group Inc.,382.32
 IONQ,IonQ Inc,379.0
-CRCL,Circle Internet Group Inc.,372.61
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
@@ -86,6 +86,7 @@ PL,Planet Labs PBC (Class A),121.87
 CSCO,Cisco Systems Inc.,111.07
 CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
+COHR,Coherent Corp.,83.07
 POW,Power Corp. Of Canada,78.77
 CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,59.95
 SMR,NuScale Power Corp.,32.31
