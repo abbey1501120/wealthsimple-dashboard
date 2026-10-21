@@ -4,9 +4,9 @@ MU,Micron Technology Inc.,14008.18
 CLS.TO,Celestica Inc.,13814.23
 NVDA,NVIDIA Corp,13730.29
 AMZN,Amazon.com Inc.,10744.22
+SNOW,Snowflake Inc (Class A),8072.77
 IREN,IREN Limited,8029.49
 MSFT,Microsoft Corp.,7965.82
-SNOW,Snowflake Inc (Class A),7907.62
 NNRG,Ninepoint Energy Fund,6910.27
 GOOG,Alphabet Inc.,6660.6
 AVGO,Broadcom CDR (CAD Hedged),6410.02
@@ -14,14 +14,14 @@ INTC,Intel Corporation,5277.18
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 BEW,BeWhere Holdings Inc,4887.5
 LRCX,Lam Research Corp.,4879.79
+GE,GE Aerospace,4126.51
 IBM,International Business Machines Corp.,4112.61
-GE,GE Aerospace,3951.75
 AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
-HOOD,Robinhood Markets Inc (Class A),2457.86
 INTC,Intel CDR (CAD Hedged),2402.41
 CDNS,Cadence Design Systems Inc.,2225.03
+HOOD,Robinhood Markets Inc (Class A),2182.0
 NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
 C,Citigroup Inc,1801.38
@@ -80,6 +80,7 @@ UPS,UPS CDR (CAD Hedged),150.0
 AMAT,Applied Materials Inc.,146.4
 QBTS,D-Wave Quantum Inc.,143.98
 RGTI,Rigetti Computing Inc.,143.23
+CRWD,CrowdStrike CDR (CAD Hedged),140.3
 GOOGL,Alphabet Inc (Class A),130.68
 BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
 PL,Planet Labs PBC (Class A),121.87
@@ -116,4 +117,4 @@ SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
 AEC.TO,Anfield Energy Inc.,-2110.51
 RR,Richtech Robotics Inc.,-2319.44
-SOFI,SoFi Technologies Inc.,-5211.31
+SOFI,SoFi Technologies Inc.,-5366.39
