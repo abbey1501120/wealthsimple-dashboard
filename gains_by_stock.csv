@@ -3,7 +3,7 @@ NVDA,Nvidia CDR (CAD Hedged),29650.81
 MU,Micron Technology Inc.,14008.18
 CLS.TO,Celestica Inc.,13814.23
 NVDA,NVIDIA Corp,13730.29
-AMZN,Amazon.com Inc.,10744.22
+AMZN,Amazon.com Inc.,10767.76
 SNOW,Snowflake Inc (Class A),8072.77
 IREN,IREN Limited,8029.49
 MSFT,Microsoft Corp.,7965.82
@@ -14,8 +14,8 @@ INTC,Intel Corporation,5277.18
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 BEW,BeWhere Holdings Inc,4887.5
 LRCX,Lam Research Corp.,4879.79
+IBM,International Business Machines Corp.,4380.16
 GE,GE Aerospace,4126.51
-IBM,International Business Machines Corp.,4112.61
 AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
@@ -72,6 +72,7 @@ VCN,Vanguard Investments Canada Inc. - FTSE Canada All Capital Index ETF,207.3
 VISA,Visa CDR (CAD Hedged),197.0
 COST,Costco CDR (CAD Hedged),193.78
 BTO,B2Gold Corp.,193.75
+COHR,Coherent Corp.,189.25
 ROBO,Exchange Traded Concepts Trust - Robo Global ETF,188.64
 LLY,Eli Lilly CDR (CAD Hedged),184.99
 TGT,Target Corp.,164.7
@@ -87,7 +88,6 @@ PL,Planet Labs PBC (Class A),121.87
 CSCO,Cisco Systems Inc.,111.07
 CBOE,Cboe Global Markets Inc.,99.59
 ZEB,BMO Asset Management Inc. - Equal Weight Banks Index ETF,87.0
-COHR,Coherent Corp.,83.07
 POW,Power Corp. Of Canada,78.77
 CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,59.95
 SMR,NuScale Power Corp.,32.31
