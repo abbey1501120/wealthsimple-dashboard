@@ -14,8 +14,8 @@ INTC,Intel Corporation,5277.18
 TSM,Taiwan Semiconductor Manufacturing,5233.49
 BEW,BeWhere Holdings Inc,4887.5
 LRCX,Lam Research Corp.,4879.79
-IBM,International Business Machines Corp.,4380.16
-GE,GE Aerospace,4126.51
+IBM,International Business Machines Corp.,4303.81
+GE,GE Aerospace,4050.8
 AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
@@ -32,8 +32,8 @@ MU,Micron CDR (CAD Hedged),1530.5
 MRVL,Marvell Technology Inc.,1482.06
 DELL,Dell Technologies Inc (Class C),1463.24
 V,Visa Inc (Class A),1458.36
+SCR,Strathcona Resources Limited,1313.02
 CVS,CVS Health CDR (CAD Hedged),1271.66
-SCR,Strathcona Resources Limited,1264.62
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
 AMZN,Amazon.com CDR (CAD Hedged),1119.25
@@ -64,8 +64,8 @@ IONQ,IonQ Inc,379.0
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
+CVE.TO,Cenovus Energy Inc.,258.65
 MSFT,Microsoft CDR (CAD Hedged),237.8
-CVE.TO,Cenovus Energy Inc.,229.45
 ABBV,AbbVie CDR (CAD Hedged),210.0
 META,Meta Platforms Inc.,208.08
 VCN,Vanguard Investments Canada Inc. - FTSE Canada All Capital Index ETF,207.3
