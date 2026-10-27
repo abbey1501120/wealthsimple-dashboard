@@ -4,7 +4,7 @@ MU,Micron Technology Inc.,14008.18
 CLS.TO,Celestica Inc.,13814.23
 NVDA,NVIDIA Corp,13730.29
 AMZN,Amazon.com Inc.,10767.76
-SNOW,Snowflake Inc (Class A),8234.88
+SNOW,Snowflake Inc (Class A),8291.27
 IREN,IREN Limited,8029.49
 MSFT,Microsoft Corp.,7965.82
 NNRG,Ninepoint Energy Fund,6910.27
@@ -15,7 +15,7 @@ TSM,Taiwan Semiconductor Manufacturing,5233.49
 BEW,BeWhere Holdings Inc,4887.5
 LRCX,Lam Research Corp.,4879.79
 IBM,International Business Machines Corp.,4303.81
-GE,GE Aerospace,4050.8
+GE,GE Aerospace,4243.49
 AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
@@ -62,6 +62,7 @@ UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
 IONQ,IonQ Inc,379.0
 QCOM,Qualcomm CDR (CAD Hedged),350.0
+CLS,Celestica Inc.,319.68
 RCI.A,Rogers Communications Inc. (Class A),290.0
 XIU,BlackRock Canada iShares S&P/TSX 60 Index ETF,281.0
 CVE.TO,Cenovus Energy Inc.,258.65
@@ -117,4 +118,4 @@ SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
 AEC.TO,Anfield Energy Inc.,-2110.51
 RR,Richtech Robotics Inc.,-2319.44
-SOFI,SoFi Technologies Inc.,-5366.39
+SOFI,SoFi Technologies Inc.,-5399.93
