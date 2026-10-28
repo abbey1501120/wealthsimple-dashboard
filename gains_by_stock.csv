@@ -19,8 +19,8 @@ GE,GE Aerospace,4243.49
 AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
+CDNS,Cadence Design Systems Inc.,2511.53
 INTC,Intel CDR (CAD Hedged),2402.41
-CDNS,Cadence Design Systems Inc.,2225.03
 HOOD,Robinhood Markets Inc (Class A),2182.0
 NOW,ServiceNow Inc,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
@@ -47,11 +47,11 @@ TSLA,Tesla Inc,744.74
 WMT,Walmart CDR (CAD Hedged),693.42
 AMD,Advanced Micro Devices Inc.,693.1
 BN.TO,Brookfield Corp.,666.2
+CRCL,Circle Internet Group Inc.,650.12
 CRWV,CoreWeave Inc.,622.98
 GE,General Electric CDR (CAD Hedged),584.17
 XIC,BlackRock iShares Core S&P/TSX Capped Composite Index ETF,574.7
 AVGO,Broadcom Inc.,537.13
-CRCL,Circle Internet Group Inc.,530.6
 QQQY,Evolve NASDAQ Technology Enhanced Yield Index Fund,515.0
 TXN,Texas Instruments Inc.,502.52
 XEQT,iShares Core Equity ETF Portfolio,496.6
@@ -83,6 +83,7 @@ AMAT,Applied Materials Inc.,146.4
 QBTS,D-Wave Quantum Inc.,143.98
 RGTI,Rigetti Computing Inc.,143.23
 CRWD,CrowdStrike CDR (CAD Hedged),140.3
+NXPI,NXP Semiconductors NV,136.08
 GOOGL,Alphabet Inc (Class A),130.68
 BOTZ,Global X Funds - Rbtcs Artfl Inte,124.58
 PL,Planet Labs PBC (Class A),121.87
