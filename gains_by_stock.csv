@@ -22,7 +22,7 @@ WCP,Whitecap Resources Inc,2788.25
 CDNS,Cadence Design Systems Inc.,2511.53
 INTC,Intel CDR (CAD Hedged),2402.41
 HOOD,Robinhood Markets Inc (Class A),2182.0
-NOW,ServiceNow Inc,1948.55
+NOW,Servicenow Inc.,1948.55
 AMD,Advanced Micro Devices CDR (CAD Hedged),1940.0
 C,Citigroup Inc,1801.38
 SMCI,Supermicro CDR (CAD Hedged),1679.17
@@ -55,7 +55,7 @@ AVGO,Broadcom Inc.,537.13
 QQQY,Evolve NASDAQ Technology Enhanced Yield Index Fund,515.0
 TXN,Texas Instruments Inc.,502.52
 XEQT,iShares Core Equity ETF Portfolio,496.6
-SNPS,"Synopsys, Inc.",472.3
+SNPS,Synopsys Inc.,472.3
 CEG,Constellation Energy Corp.,468.64
 DOL,Dollarama Inc,413.05
 UNH,UnitedHealth CDR (CAD Hedged),396.0
@@ -119,4 +119,4 @@ SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
 AEC.TO,Anfield Energy Inc.,-2110.51
 RR,Richtech Robotics Inc.,-2319.44
-SOFI,SoFi Technologies Inc.,-4305.47
+SOFI,SoFi Technologies Inc.,-4058.4
