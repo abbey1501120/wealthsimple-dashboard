@@ -16,7 +16,6 @@ BEW,BeWhere Holdings Inc,4887.5
 LRCX,Lam Research Corp.,4879.79
 IBM,International Business Machines Corp.,4303.81
 GE,GE Aerospace,4243.49
-AXTI,AXT Inc,3515.38
 JPM,JPMorgan Chase & Co.,3481.47
 WCP,Whitecap Resources Inc,2788.25
 CDNS,Cadence Design Systems Inc.,2511.53
@@ -60,6 +59,7 @@ CEG,Constellation Energy Corp.,468.64
 DOL,Dollarama Inc,413.05
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
+AXTI,AXT Inc,390.13
 IONQ,IonQ Inc,379.0
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 CLS,Celestica Inc.,319.68
