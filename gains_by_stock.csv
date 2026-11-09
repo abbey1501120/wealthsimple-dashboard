@@ -1,8 +1,8 @@
 symbol,name,gain
 NVDA,Nvidia CDR (CAD Hedged),29630.65
 MU,Micron Technology Inc.,14008.18
-CLS.TO,Celestica Inc.,13814.23
 NVDA,NVIDIA Corp,13730.29
+CLS.TO,Celestica Inc.,12697.94
 AMZN,Amazon.com Inc.,11262.44
 SNOW,Snowflake Inc (Class A),8291.27
 IREN,IREN Limited,8029.49
@@ -27,6 +27,7 @@ C,Citigroup Inc,1801.38
 SMCI,Supermicro CDR (CAD Hedged),1679.17
 ON,ON Semiconductor Corp.,1606.89
 WFC,Wells Fargo & Company,1597.49
+AMZN,Amazon.com CDR (CAD Hedged),1595.35
 MU,Micron CDR (CAD Hedged),1530.5
 MRVL,Marvell Technology Inc.,1482.06
 DELL,Dell Technologies Inc (Class C),1463.24
@@ -35,7 +36,6 @@ SCR,Strathcona Resources Limited,1313.02
 CVS,CVS Health CDR (CAD Hedged),1271.66
 ANET,Arista Networks Inc.,1157.56
 NBIS,Nebius Group NV,1145.18
-AMZN,Amazon.com CDR (CAD Hedged),1119.25
 T,AT&T Inc.,1025.31
 WMT,Walmart Inc,972.73
 MFC.TO,Manulife Financial Corporation,945.35
@@ -43,6 +43,7 @@ ATH,Athabasca Oil Corp,923.6
 GOOG,Alphabet CDR (CAD Hedged) ,759.86
 OXY,Occidental Petroleum Corporation,755.09
 TSLA,Tesla Inc,744.74
+META,Meta Platforms Inc.,695.45
 WMT,Walmart CDR (CAD Hedged),693.42
 AMD,Advanced Micro Devices Inc.,693.1
 BN.TO,Brookfield Corp.,666.2
@@ -54,13 +55,11 @@ AVGO,Broadcom Inc.,537.13
 QQQY,Evolve NASDAQ Technology Enhanced Yield Index Fund,515.0
 TXN,Texas Instruments Inc.,502.52
 XEQT,iShares Core Equity ETF Portfolio,496.6
-META,Meta Platforms Inc.,481.5
 SNPS,Synopsys Inc.,472.3
 CEG,Constellation Energy Corp.,468.64
 DOL,Dollarama Inc,413.05
 UNH,UnitedHealth CDR (CAD Hedged),396.0
 HOOD,Robinhood CDR (CAD Hedged),391.55
-AXTI,AXT Inc,390.13
 IONQ,IonQ Inc,379.0
 QCOM,Qualcomm CDR (CAD Hedged),350.0
 CLS,Celestica Inc.,319.68
@@ -120,4 +119,5 @@ SERV,Serve Robotics Inc.,-1752.23
 RKLB,Rocket Lab Corp.,-1808.27
 AEC.TO,Anfield Energy Inc.,-2110.51
 RR,Richtech Robotics Inc.,-2319.44
-SOFI,SoFi Technologies Inc.,-3554.13
+AXTI,AXT Inc,-2451.81
+SOFI,SoFi Technologies Inc.,-3566.15
